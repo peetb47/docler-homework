@@ -42,6 +42,9 @@ class Socket {
 // Node class
 // On instantiate it tries to query the DOM
 // with the specified selector.
+// Instances of this class will be able
+// to perform some handy functions like jQuery
+// (only the required ones are implemented for this project)
 class Node {
   constructor(selector) {
     this.selector = selector;
