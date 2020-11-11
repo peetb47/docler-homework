@@ -1,0 +1,134 @@
+/* common */
+* {
+    box-sizing: border-box;
+}
+
+.chat .mine {
+    text-align: right;
+}
+
+ul, body {
+    margin: 0;
+    padding: 0;
+}
+
+.chat form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.chat [name=user] {
+    text-align: center;
+}
+
+.chat [name=user], 
+.chat [type=submit] {
+    width: 20%;
+}
+
+.chat [name=message] {
+    width: 55%;
+    padding-left: .5rem;
+}
+
+.chat form {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+}
+
+.chat form > * {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.chat .messages {
+    flex: 1;
+    overflow: scroll;
+    padding: .5rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.chat .message-user {
+    color: gray;
+}
+
+.chat .message-user:after {
+    content:':'
+}
+
+input, button {
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* old-mobile */
+@media only screen and (max-width: 374px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* mobile */
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* surface duo */
+@media only screen and (min-width: 415px) and (max-width: 540px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* ipad */
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+/* ipad pro */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1025px) {
+    html {
+        font-size: 20px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chat {
+        width: 75%;
+        max-width: 700px;
+        height: 75%;
+        border: 1px solid gray;
+    }
+}
