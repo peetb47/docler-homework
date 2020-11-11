@@ -7,6 +7,7 @@ Homework application for Docler
 - or hit Send button
 
 # This app...
+- is written in latest javascript
 - is not bundled or transpiled
 - does not use any 3rd party framework except socket.io client
 - has brutalist design
